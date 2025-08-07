@@ -1,0 +1,69 @@
+<!-- <Table> <Tr> <Th> <Td> <Caption><Thead><Tbody><Tfoot>Table Tag Attribute : Cellspacing=”...” Cellpadding=”...” Border=”...” Width=”...” Height=”...” Bgcolor=”...”Td, Th Tag Attribute : Colspan, Rowspan, Bgcolor -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Table</h1>
+    <big>big tag</big>
+
+    <table bgcolor="yellow" width="500px" border="">
+      <caption>super heros results</caption>
+      <!-- heading come in thead -->
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Marks</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <!-- data will come in tbody -->
+      <tbody>
+        <tr bgcolor="blue">
+          <td>Batman</td>
+          <td>Science</td>
+          <td>99</td>
+          <td>A</td>
+        </tr>
+
+        <tr>
+          <td>Superman</td>
+          <td>Maths</td>
+          <td rowspan="4" bgcolor="red">88</td>
+          <td rowspan="2">B</td>
+        </tr>
+        <tr>
+          <td>ironman</td>
+
+          <!-- <td bgcolor="red">88</td> -->
+          <td rowspan="4">B</td>
+        </tr>
+        <tr>
+          <td>ironman</td>
+
+          <!-- <td bgcolor="red">88</td> -->
+          <td colspan="">B</td>
+        </tr>
+        <tr>
+          <td><img src="" alt=""></td>
+
+          <!-- <td bgcolor="red">88</td> -->
+          <td colspan="">B</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>all Persion</td>
+          <td>All classes</td>
+          <td>all marks</td>
+          <td>all grades</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
