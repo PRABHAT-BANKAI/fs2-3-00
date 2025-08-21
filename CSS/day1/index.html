@@ -1,0 +1,116 @@
+<!-- 
+ Introduction Of CSS
+
+Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML.
+
+
+
+- CSS Type : Internal, Inline, External CSS
+- Text Properties : font-family, font-size, font-weight, text-align, line-height, letter-spacing, word-spacing, text-decoration, font-style, text- transform, text-indent, color, list-style
+
+
+css selector
+- CSS Apply : <tag>, .class, #id
+- Ex : CSS Type & Text Properties Practice
+-->
+
+<!-- priority of CSS inline >> internal >> external -->
+
+<!-- selector in css priority   id>> class >> tagname -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- internal css create in head tag -->
+    <style>
+      h2 {
+        color: green;
+      }
+      h1 {
+        color: aqua;
+      }
+      .text-color {
+        color: purple;
+      }
+      /* p {
+        color: cornflowerblue;
+      } */
+      #text {
+        color: rgb(201, 120, 34);
+        color: #12be0f;
+      }
+      .font {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        text-transform: lowercase;
+      }
+      .size {
+        font-size: 45px;
+      }
+      .weight {
+        font-weight: 900;
+      }
+      #align {
+        text-align: center;
+      }
+      .line {
+        background-color: yellow;
+        line-height: 55px;
+      }
+      .decoration{
+        text-decoration: line-through;
+         text-decoration:underline;
+      }
+      .list{
+        list-style: georgian;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline css -->
+    <h1 style="color: red">Superman</h1>
+
+    <!-- internal css -->
+    <h2>Batman</h2>
+    <h3>ironman</h3>
+
+    <p class="text-color text-bg">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio animi minus
+      totam quos quo exercitationem. Modi quia tempore, nihil dolorem vero,
+      minus enim accusamus, ipsam odit voluptate autem eos. Totam.
+    </p>
+    <p id="text" class="text-color">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ad porro
+      non ex nisi deleniti blanditiis officia consequuntur soluta? Ducimus
+      veniam vitae quam ullam ratione possimus esse suscipit, deserunt
+      asperiores.
+    </p>
+
+    <p id="align" class="font size">Font family</p>
+    <p class="weight">Hero</p>
+
+    <p class="line">line height</p>
+    <p style="letter-spacing: 25px">hello from css</p>
+    <p style="word-spacing: 125px">hello from css</p>
+
+    <p class="decoration">
+      text decoration 
+    </p>
+
+    <p style="text-indent: 215px;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam adipisci harum sit repudiandae repellat. Eaque, error illum suscipit consectetur facilis et laudantium amet, repudiandae magni quam recusandae, temporibus totam vitae?
+    </p>
+
+    <ol class="list">
+      <li> item 1</li>
+      <li> item 2</li>
+      <li> item 3</li>
+      <li> item 4</li>
+      <li> item 5</li>
+    </ol>
+  </body>
+</html>
