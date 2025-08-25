@@ -1,0 +1,12 @@
+#text{
+  color: blueviolet;
+}
+
+.family{
+  color: aqua;
+ font-family: Arial, Helvetica, sans-serif
+}
+
+.weight {
+  font-weight: 900;
+}

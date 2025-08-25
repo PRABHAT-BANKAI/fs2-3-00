@@ -1,0 +1,75 @@
+<!-- Introduction Of CSS
+
+- CSS Type : Internal, Inline, External CSS
+
+- Text Properties : font-family, font-size, font-weight, text-align, line-height, letter-spacing, word-spacing, text-decoration, font-style, text- transform, text-indent, color, list-style
+
+- CSS Apply : <tag>, .class, #id -->
+
+<!-- priority of css  inline > internal>external  -->
+<!-- priority of css selector  #id> .class > tag name > * universal  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      p {
+        /* color: green !important; */
+        color: red;
+      }
+      .align {
+        text-align: end;
+      }
+      #height {
+        background-color: yellow;
+        line-height: 45px;
+
+        letter-spacing: 10px;
+        font-style: italic;
+      }
+      #word {
+        word-spacing: 30px;
+        text-transform: uppercase;
+        text-transform: lowercase;
+        text-transform: capitalize;
+        text-indent: 25px;
+        text-decoration: underline;
+      }
+      ul{
+        list-style: lower-latin;
+        /* list-style: none; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline style in css -->
+    <h1 style="color: rgb(103, 234, 194); font-size: 40px">heading 1</h1>
+
+    <p>heading 2</p>
+    <p id="text">batman</p>
+
+    <p class="family">class attribute</p>
+
+    <p class="weight">font weight</p>
+    <p class="align">align text</p>
+
+    <p id="height">line line-height</p>
+    <p id="word">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem
+      officiis qui, optio provident iusto dolor, itaque quos explicabo expedita
+      quibusdam error sit ea necessitatibus voluptate id sint sequi iste?
+    </p>
+
+    <ul>
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+      <li>list 4</li>
+    </ul>
+    <i class="fa-solid fa-house"></i>
+  </body>
+</html>
