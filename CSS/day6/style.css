@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  border: 1px solid black;
+  width: 200px;
+ 
+  display: inline-block;
+  padding: 5%;
+  text-align: center;
+  background-color: gray;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main-box {
+  width: 600px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 45px;
+}
+
+button {
+  width: 70px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 25px;
+  background-color: yellow;
+  border:none
+}

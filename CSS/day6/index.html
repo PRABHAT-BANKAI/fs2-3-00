@@ -1,0 +1,41 @@
+<!-- 
+ Display Properties: block, inline, inline-block, none -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box{
+        display: inline;
+      }
+      #box-2{
+        display: block;
+      }
+      .text{
+        background-color: rgb(232, 232, 76);
+        color: mediumpurple;
+        padding: 25px;
+        display: inline-block;
+        /* display: none; display none helps to remove content with space */
+        visibility: hidden;
+        /* visibility hidden helps remove content but not remove space of content; */
+      }
+    </style>
+  </head>
+  <body>
+<div class="box">
+  block div tag
+</div>
+
+<span id="box-2">span inline tag</span>
+<span>hello</span>
+
+
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nesciunt <span class="text">consequatur</span> inventore non unde facere quam repellat laudantium deserunt aspernatur consequuntur ratione illo quod autem iure, explicabo libero sequi molestiae.</p>
+
+  </body>
+</html>
