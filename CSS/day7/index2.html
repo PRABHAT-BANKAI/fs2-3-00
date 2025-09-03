@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Next sibling combinator (+) */
+      div + p {
+        background-color: red;
+      }
+
+      /* Subsequent-sibling combinator (~) */
+
+      div ~ p {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p>hello</p>
+    <div>
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+    </div>
+    <p>one</p>
+    <p>two</p>
+    <p>three</p>
+    <div></div>
+    <p>four</p>
+    <p>five</p>
+    <p>six</p>
+  </body>
+</html>

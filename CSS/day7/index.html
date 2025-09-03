@@ -1,0 +1,113 @@
+<!-- 
+ 	
+Selectordiv,P, Div P, Div > P:First Letter, :First Line, :First Child, :LastChild, :Nth Child(), :Nth Last Child(), ::Selection
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* p,
+      h2 {
+        color:green;
+      } */
+
+      /* Descendant combinator (space) */
+
+      /* .box1 p{
+        color: red;
+      } */
+
+      /* Child combinator (>) */
+      .box1 > p {
+        color: red;
+      }
+
+      .text::first-letter {
+        color: green;
+        font-size: 45px;
+      }
+      .text-2::first-line {
+        background-color: yellow;
+      }
+      div :first-child {
+        background-color: yellow;
+      }
+      /* div :last-child{
+        background-color: rgb(0, 145, 255);
+      } */
+      /* h2:nth-child(2){
+        background-color: red;
+      } */
+
+      p:nth-last-child(2) {
+        background-color: green;
+      }
+      #select::selection {
+        background-color: yellow;
+        color: red;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <p>heading 1</p>
+      <p>heading 2</p>
+      <p>heading 3</p>
+      <p>heading 4</p>
+      <div class="inner-box">
+        <p>inner1</p>
+        <p>inner2</p>
+      </div>
+      <p>extra</p>
+    </div>
+    <div>
+      <h2>item 1</h2>
+      <h2>item 2</h2>
+      <h2>item 3</h2>
+    </div>
+
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquid
+      quidem, eius deserunt commodi repudiandae numquam ullam eveniet
+      repellendus dolor nostrum unde id sapiente, tempore eos. Inventore quae
+      laborum at.
+    </p>
+    <p class="text-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe itaque, quo
+      impedit consequatur magni, doloremque corporis, dolor natus accusantium
+      optio accusamus eum dolores necessitatibus aliquam illum eos laborum quia
+      fuga.
+    </p>
+
+    <div>
+      <h2>1</h2>
+      <h2>2</h2>
+      <h2>3</h2>
+      <h2>4</h2>
+      <h2>5</h2>
+    </div>
+
+    <div>
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+      <p>5</p>
+      <h3 id="select">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis
+        numquam quidem magni exercitationem, harum voluptas consectetur suscipit
+        placeat, officiis impedit totam veritatis esse soluta! Qui, quidem
+        magni! Cumque, et. Error excepturi molestiae amet earum, nihil ipsam
+        recusandae similique ipsa sapiente totam, quis laboriosam maiores quae
+        quia. Deleniti eaque, tempore expedita possimus neque maxime sequi
+        voluptatum dolores placeat corrupti repellendus!
+      </h3>
+    </div>
+  </body>
+</html>
