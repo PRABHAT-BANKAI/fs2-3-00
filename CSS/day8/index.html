@@ -1,0 +1,95 @@
+<!-- 
+ Before, After, Transform, Hover & Transition
+
+- Transform Property : translate, rotate, scale, skew 
+Hover - :hover
+
+- Transition Property : duration, timing-function, delay, property
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* CSS Pseudo-Elements (::) */
+      #text-1::before {
+        content: "😊";
+      }
+      #text-1::after {
+        content: "🍔";
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        border: 1px solid black;
+        /* transform: rotate(125deg); */
+        /* transform: scale(0.002); */
+        /* transform: skew(25deg); */
+        /* transform: translate(50%,100%); */
+        transition: 5s;
+      }
+      .btn {
+        width: 150px;
+        height: 40px;
+        border-radius: 25px;
+        border: none;
+        background-color: blueviolet;
+        color: white;
+        transition: 2s;
+
+        /* transition-duration: ;
+        transition-property: ;
+        transition-timing-function: ;
+        transition-delay: ; */
+      }
+      /* Pseudo-class */
+      .btn:hover {
+        cursor: pointer;
+        background-color: red;
+        color: blue;
+      }
+      .box:hover {
+        transform: skew(1200deg);
+        transform: rotate(1200deg);
+      }
+      .magic {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        border: 1px solid black;
+        animation-name: magic-box;
+        animation-duration: 5s;
+        animation-delay: 2s;
+      }
+
+      @keyframes magic-box {
+        from {
+          margin: 0;
+        }
+        to {
+          margin-left: 250px;
+          transform: rotate(1200deg);
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p id="text-1">Hello</p>
+
+    <div class="box">Box1</div>
+
+    <button class="btn">Click me</button>
+
+    <div class="magic">magicbox</div>
+  </body>
+</html>
