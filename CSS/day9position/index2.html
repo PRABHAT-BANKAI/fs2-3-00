@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main-container {
+        height: 700px;
+        width: 700px;
+        background-color: yellow;
+        position: relative;
+        z-index: -4;
+      }
+      .box {
+        height: 150px;
+        width: 150px;
+        position: absolute;
+      }
+      .box-1 {
+        background-color: aqua;
+
+        top: 100px;
+        right: 100px;
+      }
+      .box-2 {
+        background-color: rgb(0, 17, 255);
+
+        top: 130px;
+        right: 130px;
+      }
+      .box-3 {
+        background-color: rgb(223, 113, 59);
+        z-index: -1;
+
+        top: 160px;
+        right: 160px;
+      }
+      .box-4 {
+        background-color: rgb(193, 33, 207);
+
+        top: 190px;
+        right: 190px;
+
+        z-index: 3;
+      }
+      .text {
+        height: 300px;
+        width: 300px;
+        background-color: aquamarine;
+        overflow: hidden;
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="box box-1">box1</div>
+      <div class="box box-2">box2</div>
+      <div class="box box-3">box3</div>
+      <div class="box box-4">box4</div>
+    </div>
+
+    <div class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit debitis
+      explicabo quam soluta fuga quaerat voluptate odit sed magni nesciunt.
+      Eaque ullam ducimus totam error officia necessitatibus voluptatem
+      praesentium omnis. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Est fuga inventore dolorum asperiores unde totam sunt eos. Debitis
+      perspiciatis magni quis quidem asperiores porro error minima iusto
+      tempore? Temporibus, amet! Sed alias, adipisci laudantium ipsum dolores
+      illo. Illo, soluta labore. Perferendis eveniet dolorum amet, id expedita
+      nulla corrupti doloremque assumenda ipsum cupiditate consequuntur rerum,
+      culpa unde tempora inventore quos saepe? Voluptates labore deserunt quis
+      cupiditate veritatis, fugit nemo officia unde sint quae quam impedit
+      doloribus et accusantium quibusdam hic est excepturi voluptatibus dicta
+      doloremque sunt accusamus laboriosam. Quidem, doloremque at.
+    </div>
+  </body>
+</html>
