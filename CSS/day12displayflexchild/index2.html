@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        background-color: aqua;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+        align-items: center;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 15px;
+      }
+      section {
+        height: calc(100vh - 70px);
+        background-color: antiquewhite;
+        display: flex;
+      }
+      .card-1 {
+        height: 100%;
+        width: 50%;
+        border: 1px solid red;
+      }
+      .card-2 {
+        height: 100%;
+        width: 50%;
+        border: 1px solid rgb(30, 150, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .image-card{
+        height: 400px;
+overflow: hidden;
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Logo</h1>
+      <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>about</li>
+        <li>features</li>
+      </ul>
+    </nav>
+    <section>
+      <div class="card-1"></div>
+      <div class="card-2">
+        <div class="image-card">
+          <img height="100%" src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/features4.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
