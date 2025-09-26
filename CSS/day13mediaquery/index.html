@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      nav {
+        height: 70px;
+        background-color: aqua;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 15px;
+      }
+      .menu {
+        display: none;
+      }
+
+      .sec-1 {
+        height: calc(100vh - 70px);
+        background-color: yellow;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      .box {
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
+      }
+      .sec-2 {
+        height: 100vh;
+        background-color: rgb(127, 211, 17);
+        display: flex;
+      }
+      .main-box{
+        width: 50%;
+        border: 1px solid black;
+        height: 100%;
+        
+      }
+
+      @media screen and (max-width: 500px) {
+        ul {
+          display: none;
+        }
+        .menu {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Logo</h1>
+      <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+        <li>features</li>
+      </ul>
+      <i class="fa-solid fa-bars menu"></i>
+    </nav>
+    <section class="sec-1">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </section>
+    <section class="sec-2">
+      <div class="main-box"></div>
+      <div class="main-box"></div>
+    </section>
+  </body>
+</html>
